@@ -29,11 +29,20 @@ Anaconda - Python 3.7
 
 ## Program:
 ``` Python
-### Developed By:
-### Register No:
+### Developed By:praveens 
+### Register No:212222240077
 
 ## i) Write the frame as JPG file
-
+import cv2
+video = cv2.VideoCapture(0)
+while(True):
+    t,frame = video.read()
+    cv2.imwrite("212222240077_praveens.jpg",frame)
+    result=False
+    if cv2.waitKey(1) == ord('b'):
+        break
+video.release()
+cv2.destroyAllWindows()
 
 
 
