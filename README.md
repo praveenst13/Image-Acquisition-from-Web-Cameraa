@@ -62,12 +62,7 @@ while(True):
 videoCaptureObject.release()
 cv2.destroyAllWindows()
 
-
-
-
 ## iii) Display the video by resizing the window
-
-
 import cv2
 import numpy as np
 cap = cv2.VideoCapture(0)
